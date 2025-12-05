@@ -3,16 +3,16 @@ library(sf)
 library(stringr)
 
 # set the working directory
-setwd("C:/Users/hanna/Downloads") 
+setwd("C:/Users/...") 
 
 # load the necessary files
 # california tracts
-cal_tracts <- st_read("C:/Users/hanna/Downloads/tl_2025_06_tract/tl_2025_06_tract.shp")
+cal_tracts <- st_read("C:/Users/../tl_2025_06_tract.shp")
 View(cal_tracts)
 
 # add rent table making sure GEOIDs have leading '0'
 rent <- read.csv(
-  "C:/Users/hanna/Downloads/rent_data_2010_2023.csv",
+  "C:/Users//rent_data_2010_2023.csv",
   colClasses = c(GEOID = "character")
 )
 
@@ -34,7 +34,7 @@ summary(rent$rent_2023)
 # this will allow for continuity between rent values
 
 # crosswalk dataset
-crosswalk <- read.csv("C:/Users/hanna/Downloads/nhgis_tr2010_tr2020_06/2010_2020_crosswalk.csv")
+crosswalk <- read.csv("C:/Users/../2010_2020_crosswalk.csv")
 View(crosswalk)
 
 names(crosswalk)
@@ -116,5 +116,6 @@ joined <- cal_tracts %>%
 View(joined)
 
 # save as geopackage (or shapefile; this is what the internet recommended)
-st_write(joined, "C:/Users/hanna/Downloads/CA_Rent_Xwalk_Joined_Adjusted.gpkg")
-st_write(joined, "C:/Users/hanna/Downloads/CA_Rent_Xwalk_Adjusted.shp") # might as well do shapefile
+st_write(joined, "C:/Users/../CA_Rent_Xwalk_Joined_Adjusted.gpkg")
+st_write(joined, "C:/Users/../CA_Rent_Xwalk_Adjusted.shp") # might as well do shapefile
+
