@@ -7,7 +7,7 @@ setwd("C:/Users/...")
 
 # load the necessary files
 # california tracts
-cal_tracts <- st_read("C:/Users/../tl_2025_06_tract.shp")
+cal_tracts <- st_read("C:/Users/../tl_2025_06_tract/tl_2025_06_tract.shp")
 View(cal_tracts)
 
 # add rent table making sure GEOIDs have leading '0'
@@ -118,4 +118,5 @@ View(joined)
 # save as geopackage (or shapefile; this is what the internet recommended)
 st_write(joined, "C:/Users/../CA_Rent_Xwalk_Joined_Adjusted.gpkg")
 st_write(joined, "C:/Users/../CA_Rent_Xwalk_Adjusted.shp") # might as well do shapefile
+
 
