@@ -8,5 +8,5 @@ A key finding from the map is that QOZs in Los Angeles County are generally loca
 
 This pattern suggests that QOZ designation has not significantly altered the rental market conditions in these communities. Rather than the tax incentivivized areas attracting investment at a rate that would considerably disrupt the rental market, areas near and within QOZs appear to follow broader regional trends with rent growth remaining relatively stable when compared to rapidly appreciating suburban and coastal areas. This does not rule out localized development or other social impacts, the rent data alone imply that QOZs in Los Angeles have had a limited effect on transforming economic conditions at the census tract level.
 
-#### Citations (NHGIS Crosswalk)
+## Citations (NHGIS Crosswalk)
 Jonathan Schroeder, David Van Riper, Steven Manson, Katherine Knowles, Tracy Kugler, Finn Roberts, and Steven Ruggles. IPUMS National Historical Geographic Information System: Version 20.0 [dataset]. Minneapolis, MN: IPUMS. 2025. http://doi.org/10.18128/D050.V20.0
